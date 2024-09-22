@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "esnext",
+      "DOM"
+    ],
+    "rootDir": ".",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "preserveValueImports": false,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.mjs",
+    "docs/.vitepress/**/*.ts",
+    "docs/.vitepress/**/*.vue",
+    "eslint.config.mjs"
+  ]
+}
