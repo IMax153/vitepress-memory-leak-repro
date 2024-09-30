@@ -1,4 +1,3 @@
-import { defaultCompilerOptions } from "twoslash"
 import { transformerTwoslash } from "@shikijs/vitepress-twoslash"
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs"
 import { npmCommandsMarkdownPlugin } from "vitepress-plugin-npm-commands"
@@ -45,11 +44,11 @@ export default defineConfig({
       md.use(tabsMarkdownPlugin)
       md.use(npmCommandsMarkdownPlugin)
     },
-    // codeTransformers: [
-    //   transformerTwoslash({
-    //     explicitTrigger: true,
-    //   })
-    // ]
+    codeTransformers: [
+      transformerTwoslash({
+        explicitTrigger: true,
+      })
+    ]
   },
 })
 
